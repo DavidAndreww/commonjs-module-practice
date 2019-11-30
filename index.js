@@ -2,38 +2,38 @@ const add = require("./modules/add");
 const subtract = require("./modules/subtract");
 const multiply = require("./modules/multiply");
 const divide = require("./modules/divide");
-const {addTen, addFive} = require("./modules/addNumbers");
-const {subtractOne }= require("./modules/subtractNumbers");
+const {addOne, addTen, addFive} = require("./modules/addNumbers");
+const { subtractOne, subtractFive, subtractTen } = require("./modules/subtractNumbers");
 
-const number1 = 393;
-const number2 = 238;
+const number1 = 20;
+const number2 = 11;
 
 let answer = add(number1,number2);
-console.log("Adding numbers",number1,number2,answer);
+console.log("Adding numbers: ",number1,number2,answer);
 
 answer = subtract(number1,number2);
-console.log(answer);
+console.log("Subtract numbers: ", answer);
 
 answer = multiply(number1,number2);
-console.log(answer);
+console.log("Multiply numbers: ", answer);
 
 answer = divide(number1,number2);
-console.log(answer);
+console.log("Divide Numbers: ", answer);
 
 answer = addTen(number1);
-console.log(answer);
+console.log("Add Ten: ", answer);
 
 answer = addFive(number1);
-console.log(answer);
+console.log("Add Five: ", answer);
 
 answer = addOne(number1);
-console.log(answer);
+console.log("Add One: ", answer);
 
 answer = subtractOne(number1);
-console.log(answer);
+console.log("Subtract One: ", answer);
 
 answer = subtractFive(number1);
-console.log(answer);
+console.log("Subtract Five: ", answer);
 
 answer = subtractTen(number1);
-console.log(answer);
+console.log("Subtract Ten: ", answer);
