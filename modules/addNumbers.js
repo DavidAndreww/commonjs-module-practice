@@ -1,9 +1,7 @@
-const add = require("./add");
-
-module.exports.addTen =  function(num) {
+module.exports.addTen = (num) => {
   return add(num,10);
 }
 
-module.exports.addFive = function(num) {
+module.exports.addFive = (num) => {
   return add(num, 5);
 }
